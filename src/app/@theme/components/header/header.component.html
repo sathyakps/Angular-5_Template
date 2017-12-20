@@ -1,0 +1,16 @@
+<div class="header-container"
+     [class.left]="position === 'normal'"
+     [class.right]="position === 'inverse'">
+  <div class="logo-containter">
+    <a (click)="toggleSidebar()" href="#" class="navigation"><i class="nb-menu"></i></a>
+    <div class="logo" (click)="goToHome()">POS<span>-V_0.1</span></div>
+  </div>
+
+</div>
+
+
+  <nb-action>
+    <nb-user [menu]="userMenu" [name]="user?.name" [picture]="user?.picture"></nb-user>
+  </nb-action>
+  <nb-action><span>&nbsp;&nbsp;</span></nb-action>
+
